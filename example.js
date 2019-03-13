@@ -82,15 +82,10 @@
 					dynComp.connect(audioContext.destination);
 
 					myRecorder = new Recorder(sourceMix);
-				},
-				function(error) {
-					notSupported();
-					return;
 				}
 			);
 		}
 	};
-
    
 	runRecorder();
 
