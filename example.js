@@ -99,6 +99,7 @@
 			myRecorder.stop();
 			myRecorder.exportWAV(function(s) {
 				myAudio.src = window.URL.createObjectURL(s);
+				window.url = myAudio.src;
 				noSrc = false;
 			});
 		}
@@ -116,7 +117,7 @@
 			myRecorder.record();
 			document.getElementById('recordButton').innerText="Stop recording";
 		} else {
-			document.getElementById('recordButton').innerText="Recording";
+			document.getElementById('recordButton').innerText="Record";
 			stop();
 		}
 	};

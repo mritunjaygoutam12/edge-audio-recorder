@@ -13,9 +13,21 @@
 				
 				<audio id="demoAudio"></audio>
 		
-
+<div onclick="fun()">
+<a href="" id="download" target="_blank">
+	download
+</a>
+</div>
 	<script src="recorder.js"></script>
-	<script src="example.js"></script>
+	<script src="example.js">
+	</script>
+<script>
+	function fun() {
+		document.getElementById('download').href=url;
+console.log(document.getElementById('download').href)
 
+	}
+
+</script>
 </body>
 </html>
