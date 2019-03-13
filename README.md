@@ -1,1 +1,1 @@
-# go-server
+# Edge Audio Recoder's Demo
