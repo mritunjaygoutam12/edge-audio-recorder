@@ -155,6 +155,7 @@
 //// apply effect ends
 	
 	window.onload = function() {
+		document.getElementById('demoAudio').onended = stop();
 		document.getElementById('recordButton').onclick = toggleRecord;
 		document.getElementById('playButton').onclick = togglePlay;
 	};
